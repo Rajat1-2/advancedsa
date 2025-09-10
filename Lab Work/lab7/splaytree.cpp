@@ -77,6 +77,12 @@ void inorder(node* root) {
     cout << root->data << " ";
     inorder(root->right);
 }
+// void inorder(node* root) {
+//     if (!root) return;
+//     inorder(root->left);
+//     cout << root->data << " ";
+//     inorder(root->right);
+// }
 
 int main() {
     node* root = nullptr;
@@ -94,4 +100,18 @@ int main() {
     cin >> k;
     root = search(root, k);
     cout << "root after splay: " << root->data << endl;
+    cout << "inorder traversal: ";
+    inorder(root);
 }
+
+/*
+
+enter values to insert (0 to stop): 3 12 4 45 78 2 33 21 10 5 7
+0
+inorder traversal: 2 3 4 5 7 10 12 21 33 45 78 
+enter key to search: 21
+root after splay: 21
+inorder traversal: 2 3 4 5 7 10 12 21 33 45 78
+
+
+*/
