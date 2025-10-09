@@ -60,7 +60,7 @@ node* deleteNode(node* root, int key) {
     if (!root->left) {
         temp = root->right;
     } else {
-        temp = splay(root->left, key); // Splay the largest node in left subtree
+        temp = splay(root->left, key); // splay the largest node in left subtree
         temp->right = root->right;
     }
     delete root;
