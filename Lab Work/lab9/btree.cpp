@@ -219,3 +219,15 @@ int main() {
     }
     return 0;
 }
+
+
+// 3
+// insert 5
+// insert 15
+// insert 10
+// display
+// 5 10 15 
+// delete 15
+// display
+// 5 10 
+// exit
